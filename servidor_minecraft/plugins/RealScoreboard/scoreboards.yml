@@ -1,0 +1,73 @@
+#✦------------------------------------------------------✦
+#|                   Scoreboard Config                   |
+#✦------------------------------------------------------✦
+# RealScoreboard created by joserodpt and maintained by Neziw
+# Parameter explanation:
+# - Default: if the scoreboard is the default one, doesn't require a permission
+# - Default-World: the default world where the scoreboard appears
+# - Display-Name: used for GUI and other purposes.
+# - Refresh-Scoreboard: the main refresh delay for the whole scoreboard
+# - Refresh-Title: refresh delay only for the scoreboard title
+# - Title-Loop-Delay: loop delay for the title animation task
+# - Board-Loop-Delay: loop delay for the bards switching task (if the scoreboard has multiple boards)
+Version: 3
+Scoreboards:
+  default:
+    Default: true
+    Default-World: world
+    Other-Worlds:
+    - '*'
+    Display-Name: '&fDefault Board'
+    Permission: none
+    Refresh:
+      Scoreboard: 5
+      Title: 10
+      Title-Loop-Delay: 5
+      Board-Loop-Delay: 30
+    Boards:
+      Board1:
+        Title:
+       
+        - '&#5C0272&l☾ &#5D0C71&lL&#5E166F&lu&#5E1F6E&ln&#5F296C&la&#60336B&lr &#613D6A&lk&#624768&li&#625067&ln&#635A65&lg &#646464&l☽'
+   
+        Lines:
+        - ' &f&#5C0272&l%day% 
+        - ' &#057265&l✯ &#137065&lN&#206E65&lo&#2E6C65&lm&#3B6A64&lb&#496864&lr&#566664&le&#646464&l: &f&5%playername% &8| &f%ping%'
+        - ' &#057265&l✯ &#157065&lR&#256D65&la&#356B65&ln&#446964&lg&#546664&lo&#646464&l:
+        - ' &7Money: &f%money% &8| &7XP: &f%xp%'
+        - ' &7Location:'
+        - ' 
+        - ' &#057265✯ &#107065P&#1A6F65o&#256D65s&#2F6C65i&#3A6A64c&#446964i&#4F6764o&#596664n&#646464:'
+        - ' &#057265✯ &f&#256D65X %x% &#446964Y %y% &#646464Z %z%'
+        - '%blank%'
+        - ' &#057265✯ &#186F65P&#2B6C65i&#3E6A64n&#516764g&#646464: &f%ping%'
+        - ' &7Online: &f%online%&8/&f%maxplayers%'
+        - '%blank%'
+  test:
+    Default: false
+    Default-World: world
+    Other-Worlds:
+    - coolWorld
+    Display-Name: '&aTest Board'
+    Permission: realscoreboard.testboard
+    Refresh:
+      Scoreboard: 1
+      Title: 20
+      Title-Loop-Delay: 10
+    Title:
+    - '{#ffffff>}RSB Gradient!{#00aeff<}'
+    - '{#69ffde}RSB RGB COLOR!'
+    Lines:
+    - '%blank%'
+    - '&7Player: %rainbow% %displayname% &8| &7Ping: &f%ping%'
+    - '&7Health: &f%life%/%lifeheart% &8| &7Food: &f%playerfood%'
+    - '&7World: &f%world% &8| &7Time: &f%time%'
+    - '&7Money: &f%money% &8| &7XP: &f%xp%'
+    - '%blank%'
+    - '&7Location: &fX %x%, Y %y%, Z %z%'
+    - '&7Facing: &fYaw %yaw% Pitch %pitch%'
+    - '%blank%'
+    - '&7IP: &f%serverip% &8| &7Port: &f%port%'
+    - '&7Version: &f%version%'
+    - '&7Players: &f%online%/%maxplayers% &8| &7RAM: &f%ram%'
+    - '%blank%'

@@ -1,0 +1,71 @@
+[02:38:58] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.8+9-Ubuntu-0ubuntu124.04.1; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[02:38:58] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.8-6-main@782ce95 (2025-07-18T20:26:58Z) for Minecraft 1.21.8
+[02:38:58] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[02:38:58] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/KSimpleTimers v1.0.jar'...
+[02:38:59] [ServerMain/ERROR]: [PluginRemapper] Encountered exception remapping plugins
+java.util.concurrent.CompletionException: java.lang.RuntimeException: Failed to remap plugin jar 'plugins/KSimpleTimers v1.0.jar'
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:649) ~[?:?]
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.RuntimeException: Failed to remap plugin jar 'plugins/KSimpleTimers v1.0.jar'
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:362) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.RuntimeException: Failed to execute task dev/kyru/org/KSimpleTimer
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:56) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:161) ~[paper-1.21.8.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:79) ~[paper-1.21.8.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:359) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.util.concurrent.ExecutionException: java.lang.IllegalStateException: Duplicate key a (attempted merging values public static dev/kyru/org/KSimpleTimer/a Ldev/kyru/org/KSimpleTimer; and public dev/kyru/org/KSimpleTimer/a Lorg/bukkit/configuration/file/FileConfiguration;)
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at net.neoforged.art.internal.AsyncHelper.invokeAll(AsyncHelper.java:52) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.consumeAll(AsyncHelper.java:36) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:161) ~[paper-1.21.8.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.run(RenamerImpl.java:79) ~[paper-1.21.8.jar:?]
+	at io.papermc.paper.pluginremap.PluginRemapper.lambda$remap$7(PluginRemapper.java:359) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at java.base/java.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:646) ~[?:?]
+	... 4 more
+Caused by: java.lang.IllegalStateException: Duplicate key a (attempted merging values public static dev/kyru/org/KSimpleTimer/a Ldev/kyru/org/KSimpleTimer; and public dev/kyru/org/KSimpleTimer/a Lorg/bukkit/configuration/file/FileConfiguration;)
+	at java.base/java.util.stream.Collectors.duplicateKeyException(Collectors.java:135) ~[?:?]
+	at java.base/java.util.stream.Collectors.lambda$uniqKeysMapAccumulator$1(Collectors.java:182) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at net.neoforged.art.internal.ClassProviderImpl$ClassInfo.<init>(ClassProviderImpl.java:122) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.lambda$addClass$1(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708) ~[?:?]
+	at net.neoforged.art.internal.ClassProviderBuilderImpl.addClass(ClassProviderBuilderImpl.java:64) ~[AutoRenamingTool-2.0.3.jar:?]
+	at net.neoforged.art.internal.RenamerImpl.lambda$run$2(RenamerImpl.java:162) ~[paper-1.21.8.jar:?]
+	at net.neoforged.art.internal.AsyncHelper.lambda$null$0(AsyncHelper.java:33) ~[AutoRenamingTool-2.0.3.jar:?]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?]
+	... 3 more
+[02:39:00] [ServerMain/INFO]: [PluginInitializerManager] Initialized 33 plugins
+[02:39:00] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (5):
+ - CrazyCrates (1.21.7-876f3a7), EconomyShopGUI (6.15.0), FancyHolograms (2.7.0), FancyNpcs (2.7.1), MiniMOTD (2.2.0)
+[02:39:00] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (28):
+ - AdvancedEnchantments (9.22.0), AdvancedMobs (1.18.6), AnvilEnhanced (2.7.0), AuraSkills (2.3.8), BattlePass (6.7), BlockRegen (2.3), DeepVoid (2.22.0), EcoArmor (8.78.0), EcoPets (2.77.1), Essentials (2.22.0-dev+38-321c911), EssentialsChat (2.22.0-dev+38-321c911), EssentialsSpawn (2.22.0-dev+38-321c911), GHolo (2.2.6), InfiniteGUI (1.1.10), ItemEdit (3.7.4), Multiverse-Core (5.3.0), PhoenixCrates (4.2.3), PlaceholderAPI (2.11.6), PocketMobs (1.1.0), Rankup (3.15.2), RavenWelcome (1.0), RealScoreboard (1.5.6), Shopkeepers (2.23.10), SkinsRestorer (15.8.2), Skulls (3.26.0), Talismans (6.77.0), WorldEdit (7.3.16+cbf4bd5), XVaults (2.1.2)
+[02:39:05] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[02:39:05] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.DirectoryLock$LockException: /workspaces/Solarking/servidor_minecraft/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:100) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:30) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:436) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:351) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at net.minecraft.server.Main.main(Main.java:185) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at org.bukkit.craftbukkit.Main.main(Main.java:242) ~[paper-1.21.8.jar:1.21.8-6-782ce95]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]

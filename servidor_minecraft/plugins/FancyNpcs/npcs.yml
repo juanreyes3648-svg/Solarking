@@ -1,0 +1,375 @@
+npcs:
+  5b01f8d6-78d8-4e23-aaac-b3fb7e24487e:
+    name: menu
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#840CFF&lM&#7E0FFF&le&#7713FF&ln&#7116FF&lu &#6A19FF&lP&#641DFF&lr&#5E20FF&li&#5723FF&ln&#5127FF&lc&#4A2AFF&li&#442DFF&lp&#3D31FF&la&#3734FF&ll'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -110.5
+      y: -59.0
+      z: -260.5
+      yaw: 121.50104
+      pitch: -9.450027
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: dark_purple
+    turnToPlayer: true
+    turnToPlayerDistance: 5
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 30
+    skin:
+      identifier: apolofs
+      variant: AUTO
+      mirrorSkin: true
+    equipment:
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4440
+        id: minecraft:player_head
+        count: 1
+        components:
+          minecraft:profile: '{id:[I;-1083660928,564083353,-1936134615,-245726280],name:"XSeries",properties:[{name:"XSeries",value:"13.0.0"},{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDYzYTIzYTgxM2IzZDU3ZDg5NjRhODU5YTdmYjk3ZWQ1ODE4Mjc5YjcwODU3MmQxNzhlOTgyNTJiZDJiN2YzZCJ9fX0="}]}'
+          minecraft:custom_name: '{extra:[{bold:0b,color:"yellow",italic:0b,obfuscated:0b,strikethrough:0b,text:"Samurai",underlined:0b}],text:""}'
+          minecraft:custom_data: '{"Skulls:ID":"1435"}'
+        schema_version: 1
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: console_command
+          value: eco give {player} 100000
+        '2':
+          action: console_command
+          value: eco give {player} 1000000
+  fc6e76e2-16d9-4194-a782-83f0f076a62d:
+    name: rtp
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#006955&lR&#01B49A&lt&#01FFDF&lp'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -122.5
+      y: -59.0
+      z: -249.5
+      yaw: -150.2998
+      pitch: 1.9500891
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: aqua
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  bba12ee6-97a9-4290-8731-26d6e168dd95:
+    name: warps
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#690000&lW&#8F1E00&la&#B43D00&lr&#DA5B00&lp&#FF7900&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -110.5
+      y: -59.0
+      z: -249.5
+      yaw: 135.60193
+      pitch: -1.800022
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: dark_red
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  bba4b031-6028-4c2d-8c2e-d21b5cf93162:
+    name: recompensas
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#2F6900&lR&#377800&le&#3F8700&lc&#489600&lo&#50A500&lm&#58B400&lp&#60C300&le&#68D200&ln&#71E100&ls&#79F000&la&#81FF00&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -123.5
+      y: -59.0
+      z: -260.5
+      yaw: -90.59796
+      pitch: 2.0999796
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: green
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  44e984eb-c83a-45d1-9a3d-b9c58c56768d:
+    name: kits
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#048F42&lK&#32A550&li&#60BA5F&lt&#8ED06D&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -110.5
+      y: -59.0
+      z: -240.5
+      yaw: 136.95282
+      pitch: 4.349939
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: dark_green
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  2cc900d2-391d-42ba-9111-b7c191994b8c:
+    name: subastas
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#87688F&lS&#916C8D&lu&#9C708C&lb&#A6748A&la&#B17889&ls&#BB7C87&lt&#C68086&la&#D08484&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -122.5
+      y: -59.0
+      z: -220.5
+      yaw: -149.85059
+      pitch: -4.0501037
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  9210cd31-3b00-47e1-923c-a617cbc98b6e:
+    name: rankups
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#8F3939&lR&#9C3232&la&#A92B2B&ln&#B62525&lk&#C31E1E&lu&#D01717&lp'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -120.5
+      y: -59.0
+      z: -235.5
+      yaw: -145.19922
+      pitch: 8.249898
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: red
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  4d32a6fe-d1a2-4e53-97aa-0bbb8ba03ef5:
+    name: protecciones
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#30468F&lP&#2C538D&lr&#275F8A&lo&#236C88&lt&#1F7886&le&#1A8584&lc&#169181&lc&#119E7F&li&#0DAA7D&lo&#09B77B&ln&#04C378&le&#00D076&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -109.74801165958799
+      y: -60.0
+      z: -232.5219734850794
+      yaw: 89.8512
+      pitch: 1.499909
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: blue
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  45a22f61-d26b-4d6e-ae4b-7b40b5195bd8:
+    name: encantamientos
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#5B8F30&lE&#507F3B&ln&#446F45&lc&#395F50&la&#2D505A&ln&#224065&lt&#173070&la&#1E307A&lm&#394184&li&#54528F&le&#6E6399&ln&#8973A3&lt&#A384AE&lo&#BE95B8&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -108.5
+      y: -59.0
+      z: -212.5
+      yaw: 128.85303
+      pitch: 8.399993
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: player_command
+          value: enchanter
+  9ddf4981-3761-47dc-ba4d-f24f22946ee0:
+    name: pets
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: pets
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -126.5
+      y: -59.0
+      z: -177.5
+      yaw: -127.19592
+      pitch: 10.349977
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  f1edff9d-2226-4b65-b497-9f72634b4b20:
+    name: jobs
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: jobs
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -106.5
+      y: -59.0
+      z: -177.5
+      yaw: 108.75421
+      pitch: 5.9999766
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  7f69e336-1449-43a3-bf7a-99d72cf40057:
+    name: dangeous
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#421C76&lD&#5D1E6B&la&#782161&ln&#932356&lg&#AE254C&le&#C92741&lo&#E42A37&lu&#FF2C2C&ls'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -128.55594136257994
+      y: -60.0
+      z: -253.13236419143814
+      yaw: -102.299255
+      pitch: 4.9500422
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: 5
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+  f2d29cc0-fa01-453c-b49f-1c1fdb68641b:
+    name: Pase
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: '&#FF4D05&lP&#FC6B04&la&#F98803&ls&#F7A603&le &#F4C402&ld&#F1E101&le
+      &#EEFF00&lB&#E6F415&la&#DEE92B&lt&#D6DF40&la&#CED455&ll&#C6C96B&ll&#BEBE80&la'
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -106.5
+      y: -59.0
+      z: -254.5
+      yaw: 97.654274
+      pitch: 12.749975
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: true
+    glowingColor: gold
+    turnToPlayer: true
+    turnToPlayerDistance: 6
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: 20
+    skin:
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: console_command
+          value: bp
+        '2':
+          action: console_command
+          value: batllepass
+        '3':
+          action: player_command
+          value: bp
+  50ff7cc4-4f0d-4986-90af-f0fd31da7264:
+    name: shop
+    creator: 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+    displayName: shop
+    type: PLAYER
+    location:
+      world: spawn3
+      x: -136.30000001192093
+      y: -60.0
+      z: -167.5187855984016
+      yaw: -90.87781
+      pitch: -3.449766
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: false
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
